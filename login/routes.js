@@ -31,6 +31,13 @@ const sert = (data) => {
     
 }
 
+router.get("/status" ,(req,res) => {
+    res.status(200).json({
+        message:`Service is up and running`,
+        success:true
+    });
+});
+
 router.post("/jwt/validation" ,passportJWT,async(req,res) => {
     let data = {
             message:`token valid`,
