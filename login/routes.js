@@ -33,7 +33,7 @@ const sert = (data) => {
 
 router.get("/status" ,(req,res) => {
     res.status(200).json({
-        message:`Service is up and running successfully`,
+        message:`Hi Welcome to Interview corner- Poweredby technicalhub.org`,
         success:true
     });
 });
