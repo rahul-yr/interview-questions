@@ -1,0 +1,18 @@
+
+
+login:
+    /api/login/gtoken   -> for default users
+                        ->  I/P ->  req.body['tokenId']
+                        ->  O/P ->  200/201 either {token , expiresIn} or 200 {message , success}
+
+    /api/login/gtoken/qa    ->  for questions_admin users
+                            ->  I/P ->  req.body['tokenId']
+                            ->  O/P ->  either 200/201 {token , expiresIn} or 200 {message , success}
+    /api/login/jwt/validation   ->  To validate jwt tokens
+                                ->  I/P ->  authorization:value
+                                ->  O/P ->  200 - either {message , success} or unauthorized
+subjects:
+    /api/subjects/add       ->  To add Subject,Domain,Sub Domain
+
+questions:
+    /api/questions/        
